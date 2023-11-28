@@ -1,0 +1,222 @@
+/* TODO: Sort out variables */
+:root {
+    --bg-color: #f5faff;
+    --theme-primary: rgb(255, 139, 2);
+    --theme-secondary: rgb();
+
+    --main-bg: rgb(27, 27, 30);
+    --main-border-color: rgb(44, 45, 45);
+    --heading-color: #cccccc;
+    --text-color: rgb(175, 176, 177);
+    --main-bg-color: rgb(255, 139, 2);
+
+    --link-color: rgb(138, 180, 248);
+    --link-underline-color: rgb(82, 108, 150);
+
+    /* Nav */
+    --nav-bg: #f5faff;
+    --nav-text-color: #CCCCCC;
+    --nav-active-color: #ffffff;
+}
+
+html {
+    font-size: 20px;
+    font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--nav-bg);
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+article {
+    width: 62%;
+    display: grid;
+    justify-items: center;
+}
+
+article img {
+    max-width: 100%;
+    justify-self: center;
+}
+
+ol {
+    list-style: none;
+}
+
+ol li {
+    margin-left: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: #ff8b02;
+}
+
+h1 {
+}
+
+.inline-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.inline-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 256px;
+}
+
+#main-menu {
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+#main-menu ul {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#main-menu li {
+    list-style-type: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#main-menu li:last-child {
+    margin-right: 10%;
+}
+
+#main-menu a {
+    text-decoration: none;
+}
+
+#main-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input{
+    display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+    to bottom,
+    var(--theme-primary), var(--theme-primary) 20%,
+    white 20%, white 40%,
+    var(--theme-primary) 40%, var(--theme-primary) 60%,
+    white 60%, white 80%,
+    var(--theme-primary) 80%, var(--theme-primary) 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: var(--theme-primary);
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu ul {
+    padding-left: 0px;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+#hamburger-input:checked ~ .overlay{
+    visibility: visible;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+}
+
+
+/* TODO: Resizing */
+@media (min-width: 320px) and (max-width: 767px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+}
