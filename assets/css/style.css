@@ -92,6 +92,17 @@ h1 {
     width: 256px;
 }
 
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-container img {
+    width: 20%;
+    height: 20%;
+}
+
 #main-menu {
     display: block;
     width: 100%;
@@ -193,6 +204,15 @@ h1 {
 }
 
 @media screen and (max-width: 750px) {
+  .image-container {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+  }
+  .image-container img {
+      width: 40%;
+      height: 40%;
+  }
   #main-menu {
     display: none;
   }
