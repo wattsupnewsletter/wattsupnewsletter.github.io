@@ -44,6 +44,7 @@ jobs:
       - name: Commit new pages
         uses: EndBug/add-and-commit@v9
         with:
+          default_author: user_info
           push: true
       - name: Setup Pages
         uses: actions/configure-pages@v3
