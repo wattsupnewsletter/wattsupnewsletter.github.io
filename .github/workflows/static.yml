@@ -41,6 +41,11 @@ jobs:
       - name: Create new webpages
         run: |
           python ./checkfornewsletters.py
+      - name: Commit new pages
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: WattsupBot
+          push: true
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
