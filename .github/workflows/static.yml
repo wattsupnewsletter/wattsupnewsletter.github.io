@@ -38,6 +38,9 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install PyMuPDF pdfminer.six yattag
+      - name: Create new webpages
+        run: |
+          python ./checkfornewsletters.py
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

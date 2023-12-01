@@ -269,7 +269,7 @@ def update_article_index_page(content: str):
 
         page_lines = page_lines[0:article_start + 1] + [content] + page_lines[article_end:]
 
-    with open("index.html", "w+") as index_page:
+    with open("latest.html", "w+") as index_page:
         new_content = ''.join(page_lines)
         index_page.write(new_content)
 
