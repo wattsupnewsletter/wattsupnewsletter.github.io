@@ -54,6 +54,19 @@ article img {
     justify-self: center;
 }
 
+hr {
+    width: 100%;
+    height: 5px;
+    color: var(--theme-primary);
+    background-color: var(--theme-primary);
+    border: 0px;
+    margin-bottom: 5%;
+}
+
+img {
+    margin-bottom: 2%;
+}
+
 ol {
     list-style: none;
 }
@@ -65,6 +78,11 @@ ol li {
 a {
     text-decoration: none;
     color: #ff8b02;
+    margin-bottom: 2%;
+}
+
+a:last-child {
+    margin-bottom: 10%;
 }
 
 h1 {
@@ -72,7 +90,8 @@ h1 {
 
 .inline-2 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% auto;
+    text-align: center;
 }
 
 .inline-3 {
@@ -80,6 +99,7 @@ h1 {
     grid-template-columns: auto auto auto;
     justify-content: space-around;
     width: 100%;
+    text-align: center;
 }
 
 .container {
