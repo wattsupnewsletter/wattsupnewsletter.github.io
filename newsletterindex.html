@@ -1,46 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Watt's Up Newsletter Subscribe</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <a href="/latest.html" style="margin-left: 5%;">
-                <img src="./assets/img/LogoTransparent.png" class="logo">
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+     .card {
+         max-width:500px;
+     }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: white;">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <img src="/assets/img/LogoTransparentCropped.png" id="nav-img">
             </a>
-            <nav id="main-menu">
-                <ul>
-                    <li><a href="/index.html">Subscribe</a></li>
-                    <li><a href="/newsletterindex.html">Newsletters</a></li>
-                    <li><a href="/about.html">About</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0 ms-auto me-5">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/newsletterindex.html">Newsletters</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/templates.html">Templates</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                    </li>
                 </ul>
-            </nav>
-
-            <input type="checkbox" id="hamburger-input" class="burger-shower" />
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                    <ul>
-                        <li><a href="/index.html">Subscribe</a></li>
-                        <li><a href="/newsletterindex.html">Newsletters</a></li>
-                        <li><a href="/about.html">About</a></li>
-                    </ul>
-                </nav>
-            </label>
-        </header>
-        <main>
-            <div class="container">
-                <ol>
-<li><a href="/newsletters/CAMPAIGN_20/newsletter.html">Newsletter 6</a></li>
-<li><a href="/newsletters/CAMPAIGN_18/newsletter.html">Newsletter 5</a></li>
-<li><a href="/newsletters/CAMPAIGN_16/newsletter.html">Newsletter 4</a></li>
-<li><a href="/newsletters/CAMPAIGN_17/newsletter.html">Newsletter 3</a></li>
-<li><a href="/newsletters/CAMPAIGN_13/newsletter.html">Newsletter 2</a></li>
-<li><a href="/newsletters/CAMPAIGN_12/newsletter.html">Newsletter 1</a></li>
-                </ol>
             </div>
-        </main>
-    </body>
+        </div>
+    </nav>
+
+    <div class="container-xl text-center">
+        <div class="row">
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_20/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_20/img/Im7.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 6 - January 2024</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_18/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_18/img/Im9.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 5 - December 2023</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_16/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_16/img/Im7.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 4 - November 2023</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_17/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_17/img/Im7.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 3 - October 2023</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_13/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_13/img/Im7.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 2 - September 2023</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+            <div class="card m-auto mb-5">
+                <a href="/newsletters/CAMPAIGN_12/newsletter.html">
+                <img src="/newsletters/CAMPAIGN_12/img/Im7.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Volume 1 - August 2023</h5>
+                    <p></p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.2-dist\js\bootstrap.bundle.min.js"></script>
+  </body>
 </html>

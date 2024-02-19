@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist\css\bootstrap.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+     .card {
+         max-width:500px;
+     }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top" style="background-color: white;">
@@ -23,10 +28,10 @@
                     <a class="nav-link" href="/newsletterindex.html">Newsletters</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/templates.html">Templates</a>
+                    <a class="nav-link active" href="/templates.html">Templates</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="/about.html">About</a>
+                    <a class="nav-link" href="/about.html">About</a>
                     </li>
                 </ul>
             </div>
@@ -35,24 +40,15 @@
 
 
     <div class="container-xl text-center">
-        <h1>This is Watt's Up</h1>
-        <p>At Watt's Up we're on a mission to simplify the complexity of Electrics and make it easy for YOU to get the information you want!</p>
-        <p>We are two friends who share a passion for electrical innovations and want to share that passion with YOU, our readers.</p>
-        <p>Every month on the 1st at 12pm GMT, we deliver directly to you a newsletter filled with all the latest industry information.</p>
-        <div class="row" style="justify-content: center;">
-            <div class="col">
-            <img src="/assets/img/JamesHeadshotUpdated.png" style="max-width: 240px; max-height: 240px"/>
+        <div class="row">
+            <div class="card">
+                <img src="/assets/img/templates/VanStockCheckListThumbnail.png" class="card-img-top"/>
+                <div class="card-body">
+                    <h5 class="card-title">Van Stock Checklist</h5>
+                    <p class="card-text">This checklist is designed to optimize van inventory, ensuring that all necessary tools, parts, and equipment are readily available.</p>
+                    <a href="/assets/downloads/Van_Stock_Checklist.xlsx" class="btn btn-primary" style="background-color: var(--theme-primary); border-color: var(--theme-primary);">Download</a>
+                </div>
             </div>
-            <div class="col">
-            <img src="/assets/img/JoelHeadshotUpdated.png" style="max-width: 240px; max-height:240px"/>
-            </div>
-        </div>
-
-        <h1>Sponsor Spotlight</h1>
-        <div class="row" style="justify-content: center;">
-        <img src="/assets/img/sponsors/MetaboLogo.png" style="max-width: 240px; max-height: 133px; margin-top: 2rem;">
-        <img src="/assets/img/sponsors/TISLogo.jpg" style="max-width: 240px; max-height: 240px;">
-        <img src="/assets/img/sponsors/TradifyLogo.png" style="max-width: 240px; max-height: 88px; margin-top: 4rem;">
         </div>
     </div>
     <script src="bootstrap-5.3.2-dist\js\bootstrap.bundle.min.js"></script>

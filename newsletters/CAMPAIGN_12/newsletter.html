@@ -4,36 +4,154 @@
         <title>Watt's Up Newsletter</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <style>
+        :root {
+          --theme-primary: rgb(255, 139, 2);
+        }
+
+        /* TODO: Only for images in newsletters */
+        .container-xl img {
+            max-width: 600px !important;
+            width: 100% !important;
+        }
+
+        body {
+            margin-top: 4.5rem;
+        }
+
+        #nav-img {
+          max-width: 346px;
+          width: auto;
+        }
+    </style>
+
     </head>
     <body>
-        <header>
-            <a href="/" style="margin-left: 5%;">
-                <img src="/assets/img/LogoTransparent.png" class="logo">
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: white;">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <img src="/assets/img/LogoTransparentCropped.png" id="nav-img">
             </a>
-            <nav id="main-menu">
-                <ul>
-                    <li><a href="/index.html">Subscribe</a></li>
-                    <li><a href="/newsletterindex.html">Newsletters</a></li>
-                    <li><a href="/about.html">About</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0 ms-auto me-5">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/newsletterindex.html">Newsletters</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/templates.html">Templates</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
 
-            <input type="checkbox" id="hamburger-input" class="burger-shower" />
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                    <ul>
-                        <li><a href="index.html">Subscribe</a></li>
-                        <li><a href="newsletterindex.html">Newsletters</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
-            </label>
-        </header>
-        <main class="container">
-            <article>
-                <img src="/newsletters/CAMPAIGN_12/img/Im7.png" /><p>Welcome to the 1st Volume of Watt's Up. Where we share Trade Secrets, Top Tips, Monthly Challenge's and more! </p><hr><img src="/newsletters/CAMPAIGN_12/img/Im10.png" /><p>These are everyday formulas that you may use on-site. Screenshot these to save time looking through the colossus regulation book. </p><div class="inline-3"><img src="/newsletters/CAMPAIGN_12/img/Im13.png" /><img src="/newsletters/CAMPAIGN_12/img/Im15.png" /><img src="/newsletters/CAMPAIGN_12/img/Im17.png" /></div><div class="inline-3"><p>Voltage Drop Equation </p><p>Ohm's Law </p><p>Power Equation </p></div><hr><img src="/newsletters/CAMPAIGN_12/img/Im19.png" /><div class="inline-2"><img src="/newsletters/CAMPAIGN_12/img/Im26.png" /><p>Gland an armoured  Fastest person to Gland an armour cable (any size) gets a shout out in next months edition plus...  Winner will receive Knipex Flat Ended Grips 180mm Check out the Challenge Video for all the details.  To enter: Subscribe to Watt's Up, #Wattsup and Tag @jimbotheelectrician on TikTok for entry.</p></div><!-- No link<a href="">Challenge Video</a>--><hr><img src="/newsletters/CAMPAIGN_12/img/Im29.png" /><div class="inline-2"><p>1. Remember the spring washer! The spring washer is designed to withstand excessive vibration, therefore prevents nuts and bolts coming loose. Bolt/Screw &gt; Spring Washer &gt; Washer</p><img src="/newsletters/CAMPAIGN_12/img/Im31.png" /></div><div class="inline-2"><p>2. 6mm Tap Fixing A 6mm tap can be beneficial for roofing bolts if you work a lot with metal containment, and unable to get nut on other side while still achieving solid fixing, this is for you. </p><img src="/newsletters/CAMPAIGN_12/img/Im33.png" /></div><div class="inline-2"><p>3. Stop damaging your Glands! Spanners or flat ended grips prevents damage to your SWA glands and leaves a cleaner finish</p><img src="/newsletters/CAMPAIGN_12/img/Im40.png" /></div><hr><img src="/newsletters/CAMPAIGN_12/img/Im42.png" /><img src="/newsletters/CAMPAIGN_12/img/Im44.png" /><img src="/newsletters/CAMPAIGN_12/img/Im46.png" /><p>Tradify the all-in-one job management tool, making it easy to manage your quotes, estimates, invoices, payments, scheduling &amp; more! </p><p>Quoting has never been easier! Tradify's newest feature, quote options, lets you offer all of your options on one quote, saving you time and limiting back and forth with your customers.  </p><p>Exclusive Discount Code: JIMBO50 14 days free of charge trial and 50% off for 3 months </p><a href="https://www.tradifyhq.com/tools">Free 14-day trial!</a><hr><img src="/newsletters/CAMPAIGN_12/img/Im49.png" /><p>Q: Should I start working for myself? </p><p>A: It's difficult to give you a straight answer, things you initially need to consider to make this decision... Do you have a business plan?  Are you personal outgoings high (are you reliant on getting paid exactly every month)? Are you willing invest more hours than the typical 9-5? This is no small decision to make so below is a direct link to a bunch of free resources that helped me get started and will hopefully help you as well! </p><a href="">Free Resources!</a><hr><img src="/newsletters/CAMPAIGN_12/img/Im57.png" /><img src="/newsletters/CAMPAIGN_12/img/Im59.png" /><p>The biggest part of being a tradesman is looking after your tools, van, staying on top of paper work... but the most important tool you own is your MIND. We will be donating 10% of any profit made from this newsletter. If you are feeling off, feel free to reach out for a chat.</p> <a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/chat-online/">Lets have a Chat! </a>
-            </article>
-        </main>
+        <div class="container-xl text-center">
+            <div class="row">
+                <img src="/newsletters/CAMPAIGN_12/img/Im7.png" class="mx-auto"/>
+                <p>Welcome to the 1st Volume of Watt's Up. Where we share Trade Secrets, Top Tips, Monthly Challenge's and more! </p>
+                <hr>
+            </div>
+
+            <div class="row">
+                <img src="/newsletters/CAMPAIGN_12/img/Im10.png" class="mx-auto"/>
+                <p>These are everyday formulas that you may use on-site. Screenshot these to save time looking through the colossus regulation book. </p>
+                <div class="row">
+                    <div class="col">
+                        <img src="/newsletters/CAMPAIGN_12/img/Im13.png" />
+                        <p>Voltage Drop Equation </p>
+                    </div>
+                    <div class="col">
+                        <img src="/newsletters/CAMPAIGN_12/img/Im15.png" />
+                        <p>Ohm's Law </p>
+                    </div>
+                    <div class="col">
+                        <img src="/newsletters/CAMPAIGN_12/img/Im17.png" />
+                        <p>Power Equation </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im19.png" class="mx-auto"/>
+                </div>
+                <img src="/newsletters/CAMPAIGN_12/img/Im26.png" class="mx-auto"/>
+                <h3>Gland an armoured</h3>
+                <p>Fastest person to Gland an armour cable (any size) gets a shout out in next months edition plus...  Winner will receive Knipex Flat Ended Grips 180mm Check out the Challenge Video for all the details.  To enter: Subscribe to Watt's Up, #Wattsup and Tag @jimbotheelectrician on TikTok for entry.</p>
+                <hr>
+            </div>
+
+            <div class="row">
+                <img src="/newsletters/CAMPAIGN_12/img/Im29.png" class="mx-auto"/>
+                <div class="row">
+                    <div class="col">
+                    <p>1. Remember the spring washer! The spring washer is designed to withstand excessive vibration, therefore prevents nuts and bolts coming loose. Bolt/Screw &gt; Spring Washer &gt; Washer</p>
+                    </div>
+                    <div class="col">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im31.png" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <p>2. 6mm Tap Fixing A 6mm tap can be beneficial for roofing bolts if you work a lot with metal containment, and unable to get nut on other side while still achieving solid fixing, this is for you. </p>
+                    </div>
+                    <div class="col">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im33.png" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>3. Stop damaging your Glands! Spanners or flat ended grips prevents damage to your SWA glands and leaves a cleaner finish</p>
+                    </div>
+                    <div class="col">
+                        <img src="/newsletters/CAMPAIGN_12/img/Im40.png" />
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im42.png" class="mx-auto"/>
+                </div>
+                <div class="row">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im44.png" class="mx-auto"/>
+                </div>
+                <img src="/newsletters/CAMPAIGN_12/img/Im46.png" class="mx-auto"/>
+                <p>Tradify the all-in-one job management tool, making it easy to manage your quotes, estimates, invoices, payments, scheduling &amp; more! </p>
+                <p>Quoting has never been easier! Tradify's newest feature, quote options, lets you offer all of your options on one quote, saving you time and limiting back and forth with your customers.  </p>
+                <p>Exclusive Discount Code: JIMBO50 14 days free of charge trial and 50% off for 3 months </p>
+                <a href="https://www.tradifyhq.com/tools">Free 14-day trial!</a>
+                <hr>
+            </div>
+
+            <div class="row">
+                <img src="/newsletters/CAMPAIGN_12/img/Im49.png" class="mx-auto"/>
+                <p>Q: Should I start working for myself? </p>
+                <p>A: It's difficult to give you a straight answer, things you initially need to consider to make this decision... Do you have a business plan?  Are you personal outgoings high (are you reliant on getting paid exactly every month)? Are you willing invest more hours than the typical 9-5? This is no small decision to make so below is a direct link to a bunch of free resources that helped me get started and will hopefully help you as well! </p>
+                <a href="">Free Resources!</a>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <img src="/newsletters/CAMPAIGN_12/img/Im57.png" class="mx-auto"/>
+                </div>
+                <img src="/newsletters/CAMPAIGN_12/img/Im59.png" class="mx-auto"/>
+                <p>The biggest part of being a tradesman is looking after your tools, van, staying on top of paper work... but the most important tool you own is your MIND. We will be donating 10% of any profit made from this newsletter. If you are feeling off, feel free to reach out for a chat.</p>
+                <a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/chat-online/">Lets have a Chat! </a>
+            </div>
+        </div>
+    <script src="/bootstrap-5.3.2-dist\js\bootstrap.bundle.min.js"></script>
     </body>
 </html>
