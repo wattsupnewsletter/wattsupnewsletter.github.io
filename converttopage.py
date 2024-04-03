@@ -62,7 +62,8 @@ def extract_images(in_path: str, out_path: str):
         image_list = curr_page.get_images()
 
         if not image_list:
-            logging.warning("No images found on page %d", page.number)
+            logging.warning("No images found on page %d", page)
+            continue
 
         for image in image_list:
             base_img = pdf_doc.extract_image(image[0])
