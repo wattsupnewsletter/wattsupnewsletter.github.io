@@ -248,7 +248,7 @@ def create_new_html_page(path: str, content: str):
     article_start_line = 34
     template[article_start_line:article_start_line] = [content]
 
-    with open(path + "/newsletter.html", "w+") as newsletter:
+    with open(path + "/newsletter.html", "w+", errors="ignore") as newsletter:
         newsletter.write(''.join(template))
 
 
@@ -270,7 +270,7 @@ def update_article_index_page(content: str):
 
         page_lines = page_lines[0:article_start + 1] + [content] + page_lines[article_end:]
 
-    with open("latest.html", "w+") as index_page:
+    with open("latest.html", "w+", errors="ignore") as index_page:
         new_content = ''.join(page_lines)
         index_page.write(new_content)
 
@@ -329,7 +329,7 @@ def main():
 
     create_new_html_page(out_path, html_blob)
     update_article_index_page(html_blob)
-    update_article_list(base_name)
+    #update_article_list(base_name)
 
 
 if __name__ == '__main__':
