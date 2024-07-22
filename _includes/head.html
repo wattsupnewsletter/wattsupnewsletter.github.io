@@ -1,0 +1,58 @@
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR9D79RKSV"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-VR9D79RKSV', { 'debug_mode':true });
+    </script>
+
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    {% if page.layout == 'home' %}
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+    <script>
+     const url = new URL(window.location.href);
+     let redir = url.searchParams.get('redir');
+
+     if (redir !== null) {
+         // Clean up the URL so we don't have metadata that means nothing to the user
+         window.history.replaceState({}, document.title, url.origin);
+     } else {
+         redir = 'Default';
+     }
+
+     function formSubmit() {
+         const nameInput = document.getElementById('FIRSTNAME');
+         const emailInput = document.getElementById('EMAIL');
+
+         if (nameInput === null || emailInput === null) {
+             // If any of these objects are null then something has gone wrong/the elements have been deleted
+             console.error(`${nameInput} ${emailInput}`);
+             return;
+         }
+
+         const nameContent = nameInput.value;
+         const emailContent = emailInput.value;
+
+         if (nameContent === '' || emailContent === '') {
+             // If any of these are empty then the submission is incomplete
+             // We don't want any telemetry for that case
+             console.error('Input fields are empty');
+             return;
+         }
+
+         gtag('event', 'newsletter_subscribe', {
+             'Origin': redir
+         });
+     }
+    </script>
+    {% endif %}
+</head>
