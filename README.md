@@ -1,1 +1,0 @@
-# Watt's Up Newsletter
