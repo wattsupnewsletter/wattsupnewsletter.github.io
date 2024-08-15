@@ -6,7 +6,7 @@
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
 
-     gtag('config', 'G-VR9D79RKSV', { 'debug_mode':true });
+     gtag('config', 'G-VR9D79RKSV');
     </script>
 
     <title>{{ page.title }}</title>
@@ -50,7 +50,8 @@
          }
 
          gtag('event', 'newsletter_subscribe', {
-             'Origin': redir
+             'Origin': redir,
+             'Email': emailContent
          });
      }
     </script>
