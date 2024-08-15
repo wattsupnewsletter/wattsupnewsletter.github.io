@@ -1,0 +1,145 @@
+h1 {
+    color: var(--theme-primary);
+}
+
+.signup-form {
+    text-align: center;
+}
+
+@media(min-width: 992px) {
+    .signup-form {
+    text-align: left;
+    }
+}
+
+.fixed-right {
+    left: auto;
+    height: 100%;
+    width: 30%;
+    z-index: 1031;
+    background-color: var(--theme-primary);
+}
+
+@media(max-width: 992px) {
+    .fixed-right {
+    display: none;
+    }
+}
+
+#col-top {
+    margin: 10%;
+}
+
+#nav-img {
+    max-height: 2.5rem;
+    max-width: 100%;
+}
+
+#side-img {
+    max-width: 800px;
+    width: inherit;
+    position: fixed;
+    right: -7rem;
+    top: 25rem;
+    transform: translate(-50%,-50%);
+}
+
+#about-col {
+    padding-top: 1rem;
+}
+
+#signup-row {
+    margin-top: 1rem;
+}
+
+@media(min-width: 992px) {
+    #signup-row {
+    margin-top: 5rem;
+    }
+
+    #display-img {
+    display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    #display-img {
+    width: 320px;
+    }
+
+    #side-img {
+    width: 800px;
+    }
+
+    #col-top {
+    margin: 0%;
+    }
+}
+
+@media(max-width: 576px) {
+    #display-img {
+    width: 300px;
+    }
+}
+
+@media(min-width: 992px) {
+    #display-img {
+    width: 800px;
+    }
+}
+
+@media(min-width: 1200px) {
+}
+
+/* Default Brevo styling */
+@font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+#sib-container input:-ms-input-placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-container textarea::placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-container a {
+    text-decoration: underline;
+    color: #2BB2FC;
+}
+/* End Default Brevo styling */
+:root {
+    --theme-primary: rgb(255, 139, 2);
+}
+
+/* Custom Brevo styling */
+.sib-form .entry__field {
+    border-color: var(--theme-primary);
+}
