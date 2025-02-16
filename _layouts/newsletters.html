@@ -2,7 +2,8 @@
 layout: default
 ---
 <div class="container-xl text-center">
-    {% for newsletter in site.newsletters%}
+    {% assign newsletters = site.newsletters | sort: "volume" %}
+    {% for newsletter in newsletters %}
         {% assign isEven = forloop.index | modulo: 2%}
 
         {% comment %}

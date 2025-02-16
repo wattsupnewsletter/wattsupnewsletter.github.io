@@ -46,3 +46,4 @@ exclude:
   - ".gitignore"
   - "tools"
   - "assets/newsletters"
+  - "assets/scripts"
