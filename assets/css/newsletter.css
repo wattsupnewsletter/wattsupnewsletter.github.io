@@ -10,16 +10,20 @@ h3, h4, h5 {
     color: var(--theme-primary);
 }
 
- .link {
-     background-color: var(--theme-primary);
-     border-radius: 1rem;
-     text-decoration: none;
-     font-weight: bold;
-     color: black;
-     display: inline-block;
-     margin-top: 1rem;
-     margin-bottom: 1rem;
- }
+a {
+    color: var(--theme-primary);
+}
+
+.link {
+    background-color: var(--theme-primary);
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
  .posts-container {
      max-width: 760px;
