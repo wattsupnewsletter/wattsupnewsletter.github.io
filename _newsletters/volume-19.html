@@ -1,0 +1,236 @@
+---
+title: Volume 19 - February 2025
+image: /assets/img/newsletters/Volume19/X7.png
+layout: newsletter
+volume: 19
+---
+
+<img src="/assets/img/newsletters/Volume19/X7.png" class="d-block img-fluid mb-2 rounded mx-auto" loading="lazy" style="max-height: 90vh;"/>
+<p>1 Month of 2025 is gone already 🚪🚶‍♀️. This volume covers fault-finding techniques brain teasers & tools to help you get your job done quicker.</p>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X9.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<div style="text-align: left;">
+    <p>Here's a little challenge to spark your curiosity and test your creative thinking. Three riddles, let's see what you got?</p>
+    <p><b>I have a switch but I'm not a light, I stop the flow but I'm not a dam. What am I?</b></p>
+    <p><b>I'm often flexible but sometimes rigid, protecting wires from damage. What am I?</b></p>
+    <p><b>I can flash without a camera and strike without a warning. What am I?</b></p>
+    <sub style="color: red;">Answers at Bottom</sub>
+</div>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X16.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<div style="text-align: left;">
+    <p>Electrical fault finding can be the job's worst but most rewarding part. Nothing beats that feeling when you find and fix that fault that another electrician couldn't fix. Below we have broken down some possible methods to fault-find.</p>
+
+    <h4 style="color: black;">Fault 1 - Short Circuit</h4>
+    <p>A "short circuit" is an electrical scenario where a current flows through an unintended path with very low resistance, causing a much higher current than normal, resulting in a sudden current surge.</p>
+
+    <p><u>Possible Causes</u></p>
+    <ul>
+        <li>Damaged insulation or worn-out wiring</li>
+        <li>Loose connections cause wires to touch</li>
+        <li>Water ingress in electrical equipment</li>
+        <li>Faulty appliances or overloaded circuits.</li>
+    </ul>
+
+    <p>Here is a method on a walkthrough to find a short circuit on a socket circuit:</p>
+
+    <p><u>Step 1: Safety First</u></p>
+    <p>Isolate the circuit, turn off the power at the consumer unit and ensure the circuit is de-energised.</p>
+    <p>Then "Lockout/Tagout", secure the breaker to prevent accidental re- energisation, and verify power is off using a voltage tester to confirm no voltage is present at the sockets.</p>
+
+    <p><u>Step 2: Visual Inspection</u></p>
+    <p>Examine the sockets and appliances, and look for any visible damage, burnt marks, or loose connections on sockets, wiring and appliances.</p>
+
+    <p><u>Step 3: Test for Insulation Resistance</u></p>
+    <p>Set up the insulation resistance tester (Megohmmeter), and disconnect all loads and sensitive equipment from the circuit.</p>
+    <p>Disconnect the neutral conductor from the neutral bar to prevent false readings.</p>
+    <p>Test between the following:-</p>
+    <ul>
+        <li>Line (L) & Neutral</li>
+        <li>Line (L) & Earth (E)</li>
+        <li>Neutral & Earth (E)</li>
+    </ul>
+    <p>Test readings below 1 ohm suggest a short circuit or direct contact between conductors.</p>
+
+    <p><u>Step 4: Divide the Circuit into Halves</u></p>
+    <p>Identify the circuit layout and trace the circuit path, noting key points such as junction boxes, spur connections, and sockets.</p>
+    <p>Then break the circuit midway, open a midpoint connection, such as a junction box or socket & test each half of the circuit using the insulation resistance tester to identify which half contains the fault.</p>
+
+    <img src="/assets/img/newsletters/Volume19/X20.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p><u>Step 5: Narrow Down the Fault Location</u></p>
+    <p>Repeat the insulation resistance test on the faulty half, continuing to divide the circuit into smaller sections by testing further down the path, isolating smaller parts each time.</p>
+    <p>The section with the lowest insulation resistance will contain the fault, if the reading remains below 1O a short circuit is confirmed.</p>
+
+    <p><u>Step 6: Locate the Specific Fault</u></p>
+    <p>Inspect the faulty section, by this point, you will usually find the fault is obvious, for example, heat or water damage will be obvious once the socket is removed.</p>
+    <p>It's fairly unusual for a cable to break down in a wall and cause a fault unless work was being carried out and someone screwed through a cable.</p>
+
+    <p><u>Step 7: Repair and Retest</u></p>
+    <p>Fixing the Fault:</p>
+    <ul>
+        <li>Replace damaged wires or components</li>
+        <li>Tighten loose connections and secure terminals</li>
+        <li>Ensure proper insulation between conductors</li>
+        <li>Re-Test Insulation Resistance</li>
+        <li>Verify the resistance is now within acceptable limits (typically above 1 megaohm).</li>
+        <li>Restore Power and Test Circuit Functionality</li>
+    </ul>
+    <p>Reconnect the circuit, energise it, and test the sockets for proper operation using a socket tester.</p>
+
+    <h4 style="color: black;">Fault 2 - Open Circuit & High-Resistance</h4>
+    <p>An open circuit occurs when the path for electrical current is interrupted, preventing electricity from flowing to the intended load or if the CPC Conductor is broken leading to no circuit protection.</p>
+
+    <p><u>Possible Causes</u></p>
+    <ul>
+        <li>Broken, loose or disconnected wires</li>
+        <li>Faulty switches or blown fuses</li>
+        <li>Loose connections</li>
+        <li>Broken components within the appliance</li>
+    </ul>
+
+    <p><u>Example: Scenario</u></p>
+    <p>An EICR has been carried out on a socket radial circuit and the electrician had a reading of 999 Ohms on R1+R2 but all sockets still have power.</p>
+
+    <p><u>Steps 1 & 2 :</u></p>
+    <p>These are the same as the previous section as they are standard checks you should carry out with any fault-finding activity.</p>
+
+    <img src="/assets/img/newsletters/Volume19/X27.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p><u>Step 3: Break the Circuit into Halves</u></p>
+    <p>Begin at the consumer, and test the socket mid-way from to the consumer unit. Test between a conductor that is continuous throughout the circuit and the conductor that isn't, being sure to have the same 2 cables linked in the CU. If you get continuity, move further away, dividing the circuit up into sections. Until you reach a point where you have no continuity.</p>
+    <p>This will indicate that the break is between the current socket and the socket that was last tested. Continue testing between these two points until we are left with 2 possible sockets that could contain the fault. The fault could either be in 1 of these sockets or the cable itself is damaged. The cable being damaged is very unlikely unless it has been disrupted. Most often it's a cable popped out in the back of a socket. See the photo for a better visualization.</p>
+
+    <p><u>Step 4: Address the Fault</u></p>
+    <ul>
+        <li>If a wire is broken or loose, strip it back, reconnect, and secure it properly.</li>
+        <li>Replace any damaged components, such as a socket or a section of cable.</li>
+        <li>Clean corroded terminals and ensure a solid, clean connection.</li>
+    </ul>
+
+    <p><u>Step 5: Verify and Restore Power</u></p>
+    <p>Re-test the circuit & reconnect all wires and test the entire circuit for continuity and resistance.</p>
+    <p>Restore power at the breaker panel and use a socket tester to confirm the proper functionality of all outlets.</p>
+    <p>Tips:</p>
+    <ul>
+        <li>Mark sockets as you test them to avoid repetition or confusion.</li>
+        <li>Document readings and findings for reference.</li>
+        <li>Draw out the circuit in the way you believe it's wired, and tick off the cables you have checked.</li>
+    </ul>
+
+    <h4 style="color: black;">Fault 3 - Reverse Polarity</h4>
+    <p>Imagine you've recently installed a new circuit in your house. You're carrying out your post checks and there is already a light plugged into a socket you want to test, you remove the lamp from the socket and plug in your tester but a fault appears "Reverse Polarity".</p>
+
+    <p><u>Possibilities Causes</u></p>
+    <ul>
+        <li>Incorrect Installation (through rushing and not checking work)</li>
+    </ul>
+
+    <p><u>Step 1: Verify the Issue</u></p>
+    <p>Unplug the appliance, and use a socket tester, If the tester shows "Live/Neutral Reversed" or similar, you've confirmed reverse polarity.</p>
+
+    <p><u>Step 2: Isolate the Circuit</u></p>
+    <p>Switch off power at the consumer unit (fuse box) for the circuit serving the suspect socket. Double-check using a Multi-meter to ensure no live current is present at the socket.</p>
+
+    <p><u>Step 3: Inspect the Socket</u></p>
+    <p>Remove the faceplate and inspect the wiring (UK Wiring)</p>
+    <ul>
+        <li>Live Wire (Brown): This should connect to the L terminal.</li>
+        <li>Neutral Wire (Blue): Should connect to the N terminal.</li>
+        <li>Earth Wire (Green/Yellow): Should connect to the E/Ground terminal.</li>
+    </ul>
+    <p>Look for errors, as If the live and neutral wires are swapped, this is the cause of reverse polarity.</p>
+
+    <img src="/assets/img/newsletters/Volume19/X32.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p>If the wiring is incorrect, rearrange it accordingly to the correct locations.</p>
+
+    <p><u>Step 4: Test the Appliance</u></p>
+    <p>Power back on once all reconnected, retest the socket using the correct test tool and if all is good plug your appliances back in.</p>
+
+    <p><u>Why did the Light still work?</u></p>
+    <p>Equipment like lamps, heaters, or basic appliances use resistive components that don't depend on polarity. Current flowing in either direction generates the same result (e.g., light or heat).</p>
+</div>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X35.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<img src="/assets/img/newsletters/Volume19/X39.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+<div style="text-align: left;">
+    <p>Super Rod has been in the game for years, designing tools that make electricians' lives easier from electricians themselves.</p>
+
+    <img src="/assets/img/newsletters/Volume19/X41.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p>When it comes to ensuring the safety and compliance of electrical installations, understanding the nuances of testing procedures is critical. Insulation resistance testing, in particular, plays a vital role in assessing the integrity of wiring and equipment, as recent regulation changes suggest</p>
+    <p>"IET Book - Guidance Note3 - Inspection and Testing Chapter 2.6.7: For Insulation Resistance testing BS 7671:2018+A2:2022 permits the test voltage applied to circuits following connection of equipment to be reduced to 250 V DC, provided that cables were tested at 500 V DC prior to connection"</p>
+    <p>Tired of wasting time troubleshooting cable runs? 🧵🎯 Say hello to the <b>Super Rod IR Link</b>, your new best friend for testing continuity in seconds! 🕒</p>
+    <p><b>What does it do?</b></p>
+    <p>The IR Link is the <b>ultimate cable tester</b> for when you're on-site and need reliable results fast.</p>
+    <p>Why you'll love it:</p>
+    <ul style="list-style-type: none;">
+        <li>✅ <b>Fast results</b> - No more second-guessing connections.</li>
+        <li>✅ <b>Portable & lightweight</b> - Fits right in your tool bag. 🛠️</li>
+        <li>✅ <b>Easy to use</b> - Designed with electricians in mind.</li>
+        <li>✅ <b>Saves time</b> - More jobs</li>
+    </ul>
+
+    <p>The investor himself Wayne has created a <a href="https://www.youtube.com/watch?v=Q13O1RbLsEQ">video breakdown</a> explaining the tool's function and features.</p>
+</div>
+
+<a href="https://super-rod.co.uk/ir-link/" class="link px-4 py-2">Check It Out!</a>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X56.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+<div style="text-align: left;">
+    <p>Your challenge is to group the 16 words below into four categories, each with a common theme. The words might belong to categories for example Apple, Microsoft, Google and Amazon (Big Tech Companies)</p>
+    <p>Some words might seem to fit in more than one group, so think carefully before making your connections.</p>
+</div>
+
+<img src="/assets/img/newsletters/Volume19/X57.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<sub style="color: red;">Answers at Bottom</sub>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X60.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<p>Below are some tools that have helped many electricians get out of sticky situations.</p>
+
+<div style="text-align: left;">
+    <p><b>Thermal Imaging Camera</b></p>
+    <p>By detecting heat patterns and temperature anomalies, they allow you to spot potential issues like overloaded circuits, loose connections, and failing components <a href="https://www.kleintools.com/catalog/test-measurement/thermal-imagers">before they escalate.</a></p>
+    <img src="/assets/img/newsletters/Volume19/X65.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p><b>Inspection Camera</b></p>
+    <p>These gems offer a clear view of hard-to-reach areas without dismantling any equipment. Perfect if you're working in a domestic situation where you need to see into the cavity for damage. These cameras allow you to quickly identify issues like damaged cables, loose connections, and even blockages in conduits.</p>
+    <img src="/assets/img/newsletters/Volume19/X69.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p><b>Socket Tester</b></p>
+    <p>These are a must-have for any electrician, especially if you regularly install sockets, a great way to ensure the socket is safe for use. Ensure your cables are in the correct locations and there are no faults across any conductors.</p>
+    <img src="/assets/img/newsletters/Volume19/X71.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+    <p><b>MFT (Multi-Functional-Tester)</b></p>
+    <p>This is a given, a device that does what it says, and tests multiple ways in different functions. A great piece of kit ensuring compliance with regulations like <b>BS 7671</b>.</p>
+</div>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X73.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<div style="text-align: left;">
+    <p><b>I have a switch but I'm not a light, I stop the flow but I'm not a dam. What am I?</b></p>
+    <p style="color: red;">Answer: Circuit Breaker</p>
+
+    <p><b>I'm often flexible but sometimes rigid, protecting wires from damage. What am I?</b></p>
+    <p style="color: red;">Answer: Conduit</p>
+
+    <p><b>I can flash without a camera and strike without a warning. What am I?</b></p>
+    <p style="color: red;">Answer: Lighting</p>
+</div>
+<hr>
+
+<img src="/assets/img/newsletters/Volume19/X81.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+<img src="/assets/img/newsletters/Volume19/X83.png" class="d-block img-fluid mb-2 rounded mx-auto" />
+
+<p>If you're interested in doing this daily the <a href="https://www.nytimes.com/games/connections">New York Times</a> does a brand new one every day on their website.</p>
+<hr>
+
+{% include contact.html %}
